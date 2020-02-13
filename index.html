@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Residenza Vignale</title>
+
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/componenti.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/popup-history.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"
+          ><img
+            class="logo"
+            src="logo.jpeg
+          "
+            alt=""
+        /></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">CONTATTI</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">SERVIZI</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">EVENTI</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">AMBIENTE</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">STORIA</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">HOME</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">STORIA</a></li>
+          <li><a href="#">AMBIENTE</a></li>
+          <li><a href="#">EVENTI</a></li>
+          <li><a href="#">SERVIZI</a></li>
+          <li><a href="#">CONTATTI</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+
+    <!-- SHOWCASE -->
+
+    <header id="showcase">
+      <section class="showcase-hero">
+        <div class="showcase__text-box">
+          <h1 class="showcase-primary">
+            <span class="showcase-primary--main"
+              >Residenza <br />
+              <span class="showcase-primary--main-vignale">Vignale</span>
+            </span>
+            <span class="showcase-primary--sub">Nel cuore di Milano</span>
+          </h1>
+
+          <a
+            href="#section-tours"
+            class="button button-color button-animated"
+            >Esplora</a
+          >
+        </div>
+      </section>
+    </header>
+
+    <!-- HISTORY -->
+    
+      <section id="heading-history">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Storia
+          </h2>
+        </div>
+
+        <div class="container-history">
+          <div class="history-text">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Dimora principesca edificata ad inizio Novecento
+            </h3>
+            <p>
+              L'edificio viene costruito negli anni 1905-1907 come dimora di un
+              principe austriaco desideroso di risiedere a Milano, perché
+              innamorato di una giovane milanese. Il progetto originale, firmato
+              dall'architetto Gattermayer, è frutto anche della collaborazione
+              con l'austriaco Adolf Loos, figura di spicco nell'architettura
+              della Vienna "fin de siècle".
+            </p>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">Il restauro</h3>
+            <p class="">
+              Dopo un minuzioso intervento di restauro, nel 2002 la casa diventa
+              una sede di prestigio per eventi, congressi, esposizioni con il
+              nome di "Residenza Vignale".
+            </p>
+
+            <a href="#popup" class="btn-text u-margin-top-small"
+              >Scopri di più &rarr;</a
+            >
+          </div>
+          <div class="history-img">
+            <div class="composition">
+              <img
+                alt="Residenza Vignale storica"
+                class="composition__photo composition__photo--p1"
+                src="img/storia/Residenza-Storica04.jpg"
+              />
+              <img
+                alt="Residenza Vignale storica"
+                class="composition__photo composition__photo--p2"
+                src="img/storia/Residenza-Storica02.jpg"
+              />
+              <img
+                alt="Residenza Vignale storica"
+                class="composition__photo composition__photo--p3"
+                src="img/storia/Residenza-Storica01.jpg"
+              />
+              <!-- <img  alt="Residenza Vignale storica"
+                           class="composition__photo composition__photo--p4"
+                           src="img/Residenza-Storica05.jpg"> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AMBIENTI -->
+      <section id="heading-ambienti" class="ambienti">
+
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Ambienti
+          </h2>
+        </div>
+        
+        <ul  class="tabs2">
+          <li data-tab-target="#sala_oro" class="tab2 active">Sala Oro</li>
+          <li data-tab-target="#sala_rossa" class="tab2">Sala Rossa</li>
+          <li data-tab-target="#sala_rosa" class="tab2">Sala Rosa</li>
+          <li data-tab-target="#sala_verde" class="tab2">Sala Verde</li>
+          <li data-tab-target="#biblioteca" class="tab2">Biblioteca</li>
+          <li data-tab-target="#atrio" class="tab2 ">Atrio</li>
+          <li data-tab-target="#cortile" class="tab2">Cortile</li>
+          <li data-tab-target="#cucina" class="tab2">Cucina</li>
+
+        </ul>
+    
+        <div class="tab2-content">
+          <!-- SALA ORO -->
+          <div id="sala_oro" data-tab-content class="active">
+            <div class="griglia">
+              <div class="slider_container">
+                <div class="slider slider_count slider_active">
+                  <img class="slide current" src="/img/ambienti/sala_oro/01_sala_oro.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_oro/02_sala_oro.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_oro/03_sala_oro.jpg" alt="" />
+                </div>
+                <div class="buttons">
+                  <button id="prev">
+                    <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="description description_sala_oro">
+                <div class="description_text">
+                  <h1>Sala Oro</h1>
+                <p>E’ la sala più grande e più luminosa, sia per l’esposizione verso la luce naturale che per il colore dorato della sue pareti. Lasciata volutamente poco arredata si adatta facilmente ad ogni tipo di allestimento.
+                  Oltre a due grandi specchiere che ne amplificano l’aspetto di grandezza contiene un suggestivo camino. Può ospitare fino a 60/70 persone sedute ai tavoli o con disposizione a platea per piccoli convegni. In piedi a buffet riesce ad ospitare circa 80/90 persone. <br>Superficie: mq  56</p>
+                </div>
+                <div class="description_map">
+                  <a class="lightbox" href="#sala_oro_big">
+                    <img src="img/ambienti/sala_oro/Planimetria_Oro.jpg"/>
+                 </a> 
+                 
+                </div>
+                
+              </div>
+            </div>
+            <div class="lightbox-target" id="sala_oro_big">
+              <img src="img/ambienti/sala_oro/Planimetria_Oro_Big.jpg"/>
+              <a class="lightbox-close" href="#sala_oro"></a>
+           </div>
+          </div>
+          
+          <!-- SALA ROSSA -->
+          <div id="sala_rossa" data-tab-content>
+            <div class="griglia">
+              <div class="slider_container">
+                <div class="slider slider_count">
+                  <img class="slide" src="/img/ambienti/sala_rossa/01_sala_rossa.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_rossa/02_sala_rossa.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_rossa/03_sala_rossa.jpg" alt="" />
+                </div>
+                <div class="buttons">
+                  <button id="prev">
+                    <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="description description_sala_rossa">
+                <div class="description_text">
+                  <h1>Sala Rossa</h1>
+                <p>Riccamente arredata e decorata. Contiene 50 persone sedute ai tavoli o con disposizione a platea
+                  per piccoli convegni. <br>Superficie: 47 mq.</p>
+                </div>
+              <div class="description_map">
+                <a class="lightbox" href="#sala_rossa_big">
+                  <img src="img/ambienti/sala_rossa/Planimetria_Rossa_Big.jpg"/>
+               </a> 
+               
+              </div>
+              
+            </div>
+          </div>
+          <div class="lightbox-target" id="sala_rossa_big">
+            <img src="img/ambienti/sala_rossa/Planimetria_Rossa_Big.jpg"/>
+            <a class="lightbox-close" href="#sala_rossa"></a>
+         </div>
+        </div>
+
+          <!-- SALA ROSA -->
+          <div id="sala_rosa" data-tab-content>
+            <div class="griglia">
+              <div class="slider_container">
+                <div class="slider slider_count">
+                  <img class="slide" src="/img/ambienti/sala_rosa/01_sala_rosa.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_rosa/02_sala_rosa.jpg" alt="" />
+                </div>
+                <div class="buttons">
+                  <button id="prev">
+                    <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="description description_sala_rosa">
+                <div class="description_text">
+                  <h1>Sala Rosa</h1>
+                <p>Accogliente ed elegante, è caratterizzata  da una suggestiva specchiera che crea singolari effetti di colore. Si presta come luogo di incontro e di conversazione o ad ospitare aperitivi o coffee break. <br>Superficie: mq 28</p>
+                </div>
+              <div class="description_map">
+                <a class="lightbox" href="#sala_rosa_big">
+                  <img src="img/ambienti/sala_rosa/Planimetria_Rosa_Big.jpg"/>
+               </a> 
+               
+              </div>
+              
+            </div>
+          </div>
+          <div class="lightbox-target" id="sala_rosa_big">
+            <img src="img/ambienti/sala_rosa/Planimetria_Rosa_Big.jpg"/>
+            <a class="lightbox-close" href="#sala_rosa"></a>
+         </div>
+        </div>
+
+
+          <!-- SALA VERDE -->
+          <div id="sala_verde" data-tab-content>
+            <div class="griglia">
+              <div class="slider_container">
+                <div class="slider slider_count">
+                  <img class="slide" src="/img/ambienti/sala_verde/01_sala_verde.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_verde/02_sala_verde.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_verde/03_sala_verde.jpg" alt="" />
+                </div>
+                <div class="buttons">
+                  <button id="prev">
+                    <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="description description_sala_verde">
+                <div class="description_text">
+                  <h1>Sala verde</h1>
+                <p>Ambiente molto raffinato, con le pareti coperte di boiserie e specchi è in comunicazione con la sala rosa e la sala oro. <br>Superficie: mq 27</p>
+                </div>
+              <div class="description_map">
+                <a class="lightbox" href="#sala_verde_big">
+                  <img src="img/ambienti/sala_verde/Planimetria_Verde_Big.jpg"/>
+               </a> 
+               
+              </div>
+              
+            </div>
+          </div>
+          <div class="lightbox-target" id="sala_verde_big">
+            <img src="img/ambienti/sala_verde/Planimetria_Verde_Big.jpg"/>
+            <a class="lightbox-close" href="#sala_verde"></a>
+         </div>
+        </div>
+
+
+           <!-- BIBLIOTECA -->
+           <div id="biblioteca" data-tab-content>
+            <div class="griglia">
+              <div class="slider_container">
+                <div class="slider slider_count">
+                  <img class="slide" src="/img/ambienti/biblioteca/01_biblioteca.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/biblioteca/02_biblioteca.jpg" alt="" />
+                </div>
+                <div class="buttons">
+                  <button id="prev">
+                    <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="description description_biblioteca">
+                <div class="description_text">
+                  <h1>Biblioteca</h1>
+                <p>La biblioteca è ubicata al piano nobile e vi si accede attraverso lo scalone d’onore. E’ un ambiente accogliente ed elegante, completamente arredato. Risulta ideale per riunioni di lavoro o come salotto supplementare. Dà diretto accesso a un ampio terrazzo fiorito.  <br>Superficie: mq 28</p>
+                </div>
+              <div class="description_map">
+                <a class="lightbox" href="#biblioteca_big">
+                  <img src="img/ambienti/biblioteca/Planimetria_Biblioteca_Big.jpg"/>
+               </a> 
+               
+              </div>
+              
+            </div>
+          </div>
+          <div class="lightbox-target" id="biblioteca_big">
+            <img src="img/ambienti/biblioteca/Planimetria_Biblioteca_Big.jpg"/>
+            <a class="lightbox-close" href="#biblioteca"></a>
+         </div>
+        </div>
+
+          
+          <!-- ATRIO -->
+          <div id="atrio" data-tab-content >
+            <div class="griglia">
+              <div class="slider_container">
+                <div class="slider slider_count">
+                  <img style="background-size: auto;"
+                    class="slide"
+                    src="/img/ambienti/atrio/01_atrio.jpg"
+                    alt=""
+                  />
+                  <img class="slide " src="/img/ambienti/atrio/02_latrio.jpg" alt="" />
+                  <img class="slide " src="/img/ambienti/atrio/03_latrio.jpg" alt="" />
+                </div>
+                <div class="buttons">
+                  <button id="prev">
+                    <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="description description_atrio">
+                <div class="description_text">
+                  <h1>Atrio</h1>
+                <p>Vi si accede attraverso un elegante ingresso indipendente dal resto dello stabile. Questo ambiente, spazioso e luminoso, è reso molto imponente dalla presenza dello scalone d’onore che conduce al piano nobile. Svolge una naturale funzione di accoglienza per ogni tipo di evento e può ospitare la reception
+                  in caso di convegni o riunioni di lavoro. E’ adiacente alla sala guardaroba e in diretta comunicazione
+                  con il cortile. <br>Superficie: mq 65</p>
+                </div>
+              <div class="description_map">
+                <a class="lightbox" href="#atrio_big">
+                  <img src="img/ambienti/atrio/Planimetria_Atrio_Big.jpg"/>
+               </a> 
+               
+              </div>
+              
+            </div>
+          </div>
+          <div class="lightbox-target" id="atrio_big">
+            <img src="img/ambienti/atrio/Planimetria_Atrio_Big.jpg"/>
+            <a class="lightbox-close" href="#atrio"></a>
+         </div>
+        </div>
+
+          <!-- CORTILE -->
+          <div id="cortile" data-tab-content>
+            <div class="griglia">
+              <div class="slider_container">
+                <div class="slider slider_count">
+                  <img class="slide" src="/img/ambienti/cortile/01_cortile.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/cortile/02_cortile.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/cortile/03_cortile.jpg" alt="" />
+                </div>
+                <div class="buttons">
+                  <button id="prev">
+                    <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="description description_cortile">
+                <div class="description_text">
+                  <h1>cortile</h1>
+                <p>Silenzioso e contornato da aiuole fiorite, è l’ideale ampliamento della Residenza durante la bella stagione. Può essere allestito con punti buffet, tavolini e ombrelloni ed ospitare spettacoli all’aperto.
+                  Su richiesta il cortile può essere coperto con una tendostruttura. <br>Superficie sfruttabile circa 120 mq.</p>
+                </div>
+              <div class="description_map">
+                <a class="lightbox" href="#cortile_big">
+                  <img src="img/ambienti/cortile/Planimetria_Cortile_Big.jpg"/>
+               </a> 
+               
+              </div>
+              
+            </div>
+          </div>
+          <div class="lightbox-target" id="cortile_big">
+            <img src="img/ambienti/cortile/Planimetria_Cortile_Big.jpg"/>
+            <a class="lightbox-close" href="#cortile"></a>
+         </div>
+        </div>
+
+               <!-- CUCINA -->
+               <div id="cucina" data-tab-content>
+                <div class="griglia">
+                  <div class="slider_container">
+                    <div class="slider slider_count">
+                      <img class="slide" src="/img/ambienti/cucina/01_cucina.jpg" alt="" />
+                      <img class="slide" src="/img/ambienti/cucina/01_cucina.jpg" alt="" />
+                    </div>
+                    <div class="buttons">
+                      <button id="prev">
+                        <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+                      </button>
+                      <button id="next">
+                        <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="description description_cucina">
+                    <div class="description_text">
+                      <h1>cucina</h1>
+                    <p>Ambiente moderno e tecnologicamente funzionale. A disposizione frigorifero con freezer, due forni,
+                      quattro fuochi e una piastra elettrica. L’ingresso diretto dal cortile facilita le operazioni di carico e scarico
+                      al personale del catering. In collegamento diretto vi è un bagno – spogliatoio per il personale. <br>Superficie: mq 24</p>
+                    </div>
+                  <div class="description_map">
+                    <a class="lightbox" href="#cucina_big">
+                      <img src="img/ambienti/cucina/Planimetria_Cucina_Big.jpg"/>
+                   </a> 
+                   
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="lightbox-target" id="cucina_big">
+                <img src="img/ambienti/cucina/Planimetria_Cucina_Big.jpg"/>
+                <a class="lightbox-close" href="#cucina"></a>
+             </div>
+            </div>
+      </section>
+
+    
+
+          
+      <!-- EVENTI -->
+      <section style="margin-top: 800px; height: 800px; background-color: white;">
+        <h1>EVENTI</h1>
+      </section>
+
+      <!-- PARTNER -->
+      <section style="height: 800px; background-color: white;">
+        <h1>PARTNER</h1>
+      </section>
+
+      <!-- SERVIZI -->
+      <section id="servizi-section">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary-white">
+            Servizi
+          </h2>
+        </div>
+        <div class="container-servizi">
+          <!-- box 1 -->
+          <div class="servizi-box bg-light">
+            <i class="fas fa-box-open servizi-box__icona"></i>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Servizi forniti in dotazione
+            </h3>
+
+            <div class="servizi-box_text">
+              <ul class="servizi-box_list">
+                <li>
+                  <p>
+                    <i class="fas fa-fan"></i><span >Condizionamento</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-music"></i><span >Amplificazione musicale</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-tty"></i><span >Linea telefonica diretta ISDN</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-wifi"></i><span >Connessione Internet</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-fax"></i><span >Uso fax e fotocopiatrice</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-tshirt"></i><span >Spazio guardaroba attrezzato</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- box 2 -->
+          <div class="servizi-box bg-light">
+            <i class="fas fa-people-carry servizi-box__icona"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Servizi accessori
+            </h3>
+            <div class="servizi-box_text">
+              <ul class="servizi-box_list">
+                <li>
+                  <p>
+                    <i class="fas fa-concierge-bell"></i><span >Catering*</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-spa"></i><span >Fioristi</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-icons"></i><span >Intrattenimenti</span>
+                  </p>
+                </li>
+                <li>
+                <li>
+                  <p>
+                    <i class="fas fa-holly-berry"></i><span >Addobbi e arredi</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <!-- <i class="fab fa-instagram"> --></i
+                    ><span >*Catering esterno e non esclusivo</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- box 3 -->
+
+          <div class="servizi-box bg-light">
+            <i class="fas fa-tools servizi-box__icona"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Servizi tecnici disponibili su richiesta
+            </h3>
+            <div class="servizi-box_text">
+              <ul class="servizi-box_list">
+                <li>
+                  <p>
+                    <i class="fas fa-photo-video"></i><span >Videoproiettore</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-desktop"></i><span >Lavagna luminosa</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-chalkboard-teacher"></i><span >Teleconferenze</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-language"></i><span >Traduzione simultanea</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-microphone"></i><span >Registrazione audio</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-headset"></i><span >Microfoni e radiomicrofoni</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+    <!-- FORM -->
+    <section class="section-book">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <div class=" u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Richiedi informazioni
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Nome"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label"> Nome</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Indirizzo Email"
+                  id="email"
+                  required
+                />
+                <label for="email" class="form__label">Indirizzo Email</label>
+              </div>
+              <div class="form__group">
+                <textarea class="form__text" name="message" id="message" placeholder="Inserisci il tuo messaggio"></textarea>
+              
+              </div>
+              
+              <div class="form__group u-margin-bottom-medium">
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="small" name="form-group">
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span> Privato</label>
+                </div>
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="form-group">
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span> 
+                    Azienda</label>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <button class="btn btn--green">Invia &rarr;</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Residenza Vignale</h5>
+            <p class="grey-text text-lighten-4">
+              Per informazioni, preventivi, prenotazioni e visite della Residenza Vignale riolgersi a <strong>Ambercroft S.r.l</strong>, Via E. Toti 2, 20123 Milano
+              
+                <ul>
+                  <li>&nbsp;</li>
+                  <li>Tel. 02 48006225</li>
+                  <li>Fax 02 48195533</li>
+                  <li>E-mail info@residenzavignale.com</li>
+                  <li>MM1 Conciliazione</li>
+                  <li>Tram n. 16 e 10</li>
+                  <li>Autobus n. 61, 67, 68 e 50</li>
+
+                </ul>
+        
+            </p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Link Utili</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Domande & Risposte</a></li>
+              <li><a class="white-text" href="#!">Privacy Policy</a></li>
+              <li><a class="white-text" href="#!">Su di noi</a></li>
+              <li><a class="white-text" href="#!">Contatti</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Seguici</h5>
+            <ul class="list-inline">
+              <li class="social-icon">
+                <a class="white-text" href="#!"
+                  ><i class="fab fa-facebook-square fa-3x"></i
+                ></a>
+              </li>
+              <li class="social-icon">
+                <a class="white-text" href="#!"
+                  ><i class="fab fa-instagram fa-3x"></i
+                ></a>
+              </li>
+              <li class="social-icon">
+                <a class="white-text" href="#!"
+                  ><i class="fab fa-google fa-3x"></i
+                ></a>
+              </li>
+              <li class="social-icon">
+                <a class="white-text" href="#!"
+                  ><img class="icon-google" src="img/icon/business2.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center">
+          Copyright © 2020 Ambercroft S.r.l. Milano Via E. Toti, 2 - Tel. 02 480
+          062 25 - Fax. 02 481 955 33 - e-mail: info@residenzavignale.com
+          <a
+            class="brown-text text-lighten-3"
+            href="http://materializecss.com"
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- POPUP HISTORY -->
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="img/storia/Residenza-Storica05.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="img/storia/Residenza-Storica01.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#heading-history" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">La Storia</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Una residenza principesca costruita per amore agli inizi del
+            Novecento
+          </h3>
+          <p class="popup__text">
+            L'edificio viene costruito negli anni 1905-1907 come dimora di un
+            principe austriaco desideroso di risiedere a Milano, perché
+            innamorato di una giovane milanese. Il progetto originale, firmato
+            dall'architetto Gattermayer, è frutto anche della collaborazione con
+            l'austriaco Adolf Loos, figura di spicco nell'architettura della
+            Vienna "fin de siècle". Nella facciata di taglio semplice e pulito
+            si uniscono elementi decorativi di gusto austriaco tradizionale,
+            come il balcone a quadri e del liberty milanese, come i putti che
+            sorreggono il terrazzo. Il corpo principale, destinato a residenza
+            del Principe, è a due piani: al piano terra i grandi saloni con
+            accesso sul cortile, al primo piano camere da letto e salottini.
+            Sull'altro lato del cortile si trovano gli alloggi della servitù,
+            inseriti in un curioso edificio con modanature di legno scuro e un
+            grazioso bovindo. Vi sono anche la scuderia per i cavalli e il
+            deposito per la carrozza, protetto quest'ultimo da una pensilina di
+            ferro elegantemente decorata. Dopo la morte in battaglia del
+            principe, nel 1914, la casa passa nelle mani di diversi proprietari.
+            Viene sopraelevata di alcuni piani negli anni '50, ma mantiene
+            ugualmente intatto l'antico fascino della facciata e del cortile.
+            All’interno l’arredo è composto da specchiere e console dorate,
+            arazzi, quadri, tappeti e un raffinatissimo salottino siciliano in
+            boiserie e specchi. Rimane assolutamente immutato l'aspetto
+            originario in tutta la struttura di base, dai soffitti elegantemente
+            decorati, ai pavimenti in parquet e marmo, al taglio pulito e
+            grandioso dello scalone e delle sale. Dopo un minuzioso intervento
+            di restauro, nel 2002 la casa diventa una sede di prestigio per
+            eventi, congressi, esposizioni con il nome di "Residenza Vignale".
+          </p>
+          <a href="#" class="btn btn--green">Prenota Evento</a>
+        </div>
+      </div>
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tab.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6aaa0addef.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+          $('.tabs').tabs()
+          $('.materialboxed').materialbox()
+          $('.carousel.carousel-slider').carousel({ fullWidth: true });
+      });
+  </script>
+  
+
+  </body>
+</html>

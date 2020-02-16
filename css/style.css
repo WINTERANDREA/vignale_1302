@@ -3,9 +3,13 @@
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
-  --color-secondary: #7f9f9c;
-  --color-secondary-light: rgb(97, 182, 189);
-  --color-secondary-dark: rgb(47, 85, 74);
+  --color-secondary: #49a36b;
+  --color-secondary2: rgb(33, 73, 49);
+  --color-secondary-light2: rgb(119, 218, 156);
+  --color-secondary3: rgb(108, 170, 37);
+  --color-secondary3-opaco: rgba(61, 252, 134, 0.5);
+  --color-secondary-light: rgb(97, 182, 189); /* rgb(127, 159, 156); */
+  --color-secondary-dark: rgb(6, 31, 13);
   --color-secondary-2: #26a69a;
   --color-secondary-light-2: rgb(45, 204, 188);
   --color-secondary-dark-2: rgb(33, 141, 130);
@@ -49,6 +53,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-grey-dark-2);
+  /*   overflow: hidden; */
 }
 
 nav ul a,
@@ -76,6 +81,7 @@ p {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
+
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
 }
@@ -94,6 +100,9 @@ p {
   }
 }
 
+.u-margin-top-xsmall {
+  margin-top: 2rem !important;
+}
 .u-margin-top-small {
   margin-top: 4rem !important;
 }
@@ -109,13 +118,14 @@ p {
 
 .heading-secondary {
   font-family: var(--text-heading);
+  font-weight: bold;
   font-size: 3.5rem;
   text-transform: uppercase;
   display: inline-block;
   background-image: linear-gradient(
     to top,
-    var(--color-secondary-dark),
-    var(--color-secondary)
+    var(--color-grey-light-1),
+    var(--color-grey-light-1)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -140,9 +150,10 @@ p {
 }
 
 .heading-tertiary {
-  font-family: var(--text-heading);
+  font-family: var(--text-body);
   font-size: var(--default-size); /*  16px */
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .bg-dark {
@@ -153,6 +164,10 @@ p {
 .bg-light {
   background-color: var(--color-grey-light-3);
   color: var(--color-grey-dark-2);
+}
+
+.green {
+  color: var(--color-secondary) !important;
 }
 
 /* NAVBAR */
@@ -181,9 +196,9 @@ nav ul a:hover {
 .showcase-hero {
   height: 92vh;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(20, 138, 102, 0.2),
-      rgba(0, 0, 0, 0.2)
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.6)
     ),
     url("../img/showcase.jpg");
 
@@ -235,10 +250,11 @@ nav ul a:hover {
   font-family: var(--text-heading);
   background: linear-gradient(
     to top,
-    var(--color-grey-light-1),
-    var(--color-secondary-2)
+    var(--color-secondary2),
+    var(--color-secondary)
   );
-  padding: 8rem 0 25rem 0;
+  padding: 8rem 0 15rem 0;
+  color: var(--color-grey-light-1);
 }
 
 .container-history {
@@ -248,12 +264,28 @@ nav ul a:hover {
   margin: 0 auto;
 }
 
+@media (max-width: 900px) {
+  .container-history {
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+  }
+}
+
 .container-history:not(:last-child) {
   margin-bottom: var(--gutter-vertical);
 }
 
 .history-text {
   max-width: 35%;
+}
+
+@media (max-width: 900px) {
+  .history-text {
+    max-width: 50rem;
+    padding: 0 3rem;
+    align-self: center;
+  }
 }
 
 .history-text p {
@@ -265,6 +297,14 @@ nav ul a:hover {
   padding-left: 6rem;
 }
 
+@media (max-width: 900px) {
+  .history-img {
+    max-width: 50rem;
+    padding: 0 3rem;
+    align-self: center;
+  }
+}
+
 /* AMBIENTI */
 
 #heading-ambienti {
@@ -273,10 +313,11 @@ nav ul a:hover {
   font-family: var(--text-heading);
   background: linear-gradient(
     to bottom,
-    var(--color-grey-light-1),
-    var(--color-grey-light-1)
+    var(--color-secondary2),
+    var(--color-secondary)
   );
-  padding: 8rem 0 25rem 0;
+  padding: 8rem 0 7rem 0;
+  color: var(--color-grey-light-1);
 }
 
 .description {
@@ -284,7 +325,8 @@ nav ul a:hover {
   align-content: space-between;
   height: 100%;
   font-family: var(--text-body);
-  color: #333;
+  color: inherit;
+  padding: 2.5rem 10rem;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -294,17 +336,35 @@ nav ul a:hover {
 .description p {
   font-size: 1.6rem;
   line-height: 2.5rem;
-  padding: 2rem;
+  text-align: justify;
 }
+
+/* EVENTI */
+#heading-eventi {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 10rem 0;
+  background-color: var(--color-grey-light-3);
+}
+
+/* .triangle {
+  position: relative;
+  top: -25rem;
+  height: 30rem;
+  z-index: -1;
+  background-color: var(--color-secondary);
+  -webkit-clip-path: polygon(63% 69%, 50% 100%, 36% 69%);
+  clip-path: polygon(63% 69%, 50% 100%, 36% 69%);
+} */
 
 /* SERVIZI */
 #servizi-section {
-  margin-top: -10rem;
-  padding: 20rem 0;
+  padding: 10rem 0;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      to bottom,
+      rgba(73, 163, 107, 0.8),
+      rgba(73, 163, 107, 0.1)
     ),
     url(../img/ambienti/sala_oro/01_sala_oro.jpg);
   background-size: cover;
@@ -314,47 +374,13 @@ nav ul a:hover {
   clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%); */
 }
 
-/* #servizi-section > * {
-  transform: skewY(7deg);
-} */
-
-.container-servizi {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.servizi-box {
-  width: 25%;
-  text-align: center;
-}
-
-.servizi-box_list {
-  width: 85%;
-  margin: auto;
-}
-.servizi-box_list > li {
-  width: 100%;
-  margin: 1.5rem auto;
-  text-align: left;
-}
-
-.servizi-box_list > li i {
-  padding-right: 1rem;
-  font-size: 2rem;
-}
-
-.servizi-box_list > li span {
-  font-size: 1.4rem;
-}
-
 /* CONTATTI FORM */
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(
-    to right bottom,
-    var(--color-secondary-light),
-    var(--color-secondary-dark)
+    to bottom,
+    var(--color-secondary),
+    var(--color-secondary2)
   );
 }
 
@@ -378,14 +404,15 @@ nav ul a:hover {
   padding: 6rem;
 }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
 /* FOOTER */
 .page-footer {
   font-family: var(--text-body);
-  background-image: linear-gradient(
-    to bottom right,
-    var(--color-secondary),
-    var(--color-secondary-dark)
-  );
+  background: var(--color-secondary-dark);
 }
 
 .social-icon:hover {

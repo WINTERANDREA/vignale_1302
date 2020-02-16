@@ -40,20 +40,8 @@ tabs.forEach((tab, index) => {
     });
     slides[fff[0]].classList.add("current");
 
-    next.addEventListener("click", e => {
-      nextSlide();
-      if (auto) {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
-      }
-    });
+    next.addEventListener("click", nextSlide);
 
-    prev.addEventListener("click", e => {
-      prevSlide();
-      if (auto) {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
-      }
-    });
+    prev.addEventListener("click", prevSlide);
   });
 });

@@ -92,7 +92,7 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
-  margin-top: 7rem;
+  margin-top: 3rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -706,10 +706,16 @@
 /* Styles the thumbnail */
 
 a.lightbox img {
-  width: 40%;
+  width: 50%;
   border: 3px solid white;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   animation: pulsate 2s;
+}
+
+@media (max-width: 990px) {
+  a.lightbox img {
+    width: 220px;
+  }
 }
 
 a.lightbox img:hover {

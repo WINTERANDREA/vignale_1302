@@ -53,7 +53,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-grey-dark-2);
-  /*   overflow: hidden; */
+  overflow: hidden;
 }
 
 nav ul a,
@@ -415,7 +415,7 @@ nav ul a:hover {
   height: 100%;
   font-family: var(--text-body);
   color: inherit;
-  padding: 0 5rem;
+  padding: 0 2rem;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -429,14 +429,24 @@ nav ul a:hover {
 }
 
 .description p {
-  font-size: 1.6rem;
-  line-height: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   text-align: justify;
 }
 
 @media (max-width: 900px) {
   .description p {
     margin-bottom: 6rem !important;
+  }
+}
+
+.description_text h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 990px) {
+  .description_text h3 {
+    margin-top: 2rem;
   }
 }
 

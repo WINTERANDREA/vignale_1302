@@ -53,6 +53,9 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-grey-dark-2);
+}
+
+.ggg {
   overflow: hidden;
 }
 
@@ -286,7 +289,6 @@ nav ul a:hover {
   color: var(--color-grey-light-1);
   text-transform: uppercase;
 
-  backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 .showcase-primary--main {
@@ -310,6 +312,7 @@ nav ul a:hover {
 @media (max-width: 450px) {
   .showcase-primary--main {
     font-size: 3rem;
+    padding-left: 1rem;
   }
 }
 
@@ -377,6 +380,14 @@ nav ul a:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .history-text {
+    max-width: 50rem;
+    padding: 0;
+    align-self: center;
+  }
+}
+
 .history-text p {
   font-size: 1.4rem;
 }
@@ -405,13 +416,12 @@ nav ul a:hover {
     var(--color-secondary2),
     var(--color-secondary)
   );
-  padding: 8rem 0 14rem 0;
+  padding: 8rem 0 0 0;
   color: var(--color-grey-light-1);
 }
 
 .description {
   display: grid;
-  align-content: space-between;
   height: 100%;
   font-family: var(--text-body);
   color: inherit;
@@ -432,6 +442,7 @@ nav ul a:hover {
   font-size: 1.4rem;
   line-height: 2rem;
   text-align: justify;
+  padding-left: 1.5rem;
 }
 
 @media (max-width: 900px) {
@@ -450,6 +461,17 @@ nav ul a:hover {
   }
 }
 
+.planimetria-det {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 990px) {
+  .planimetria-det {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* EVENTI */
 #heading-eventi {
   height: 100%;
@@ -459,31 +481,34 @@ nav ul a:hover {
   background-color: var(--color-grey-light-1);
 }
 
-.triangle {
-  position: relative;
-  height: 25rem;
-  z-index: -1;
-  background: linear-gradient(
-    to bottom,
-    var(--color-secondary),
-    var(--color-grey-light-1)
-  );
-}
-
 /* SERVIZI */
 #servizi-section {
   padding: 10rem 0;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(73, 163, 107, 0.8),
-      rgba(73, 163, 107, 0.1)
-    ),
-    url(../img/ambienti/sala_oro/01_sala_oro.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
+    url(../img/eventi/amazon/08_amazon.jpg);
   background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
   /*  transform: skewY(-7deg); */
   /* -webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%); */
+}
+
+.header-servizi {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 80%;
+  margin: 5rem auto;
+}
+
+.header-servizi h2 {
+  margin-top: 0;
+}
+
+.header-servizi p {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 /* CONTATTI FORM */
@@ -574,6 +599,29 @@ nav ul a:hover {
 .page-footer {
   font-family: var(--text-body);
   background: var(--color-secondary-dark);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.page-footer h5 {
+  text-transform: uppercase;
+}
+
+.page-footer p,
+.page-footer ul {
+  text-align: left;
+}
+
+.page-footer .container {
+  width: 90%;
+}
+
+.page-footer .social-icon {
+  font-size: 1rem;
+  text-align: right;
+}
+.page-footer .mappa {
+  text-align: center;
 }
 
 .social-icon:hover {
@@ -587,4 +635,32 @@ nav ul a:hover {
 .icon-google {
   width: 2.9rem;
   height: 2.9rem;
+}
+
+.google-map {
+  max-width: 400px;
+  height: 200px;
+}
+
+@media (max-width: 992px) {
+  .page-footer p,
+  .page-footer ul,
+  .page-footer .social-icon {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .page-footer ul li:last-child,
+  .page-footer .mappa {
+    padding-bottom: 5rem;
+  }
+  .page-footer .google-map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-footer .row {
+    padding: 0;
+  }
 }

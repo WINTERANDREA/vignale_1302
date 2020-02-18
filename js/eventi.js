@@ -152,3 +152,61 @@ setInterval(function() {
 //34567   671
 //...
 //71234   712
+
+move_start = 0;
+move_end = 0;
+
+slider_container.addEventListener("touchstart", function(ev) {
+  console.log(ev.touches[0].clientX);
+  move_start = ev.touches[0].clientX;
+});
+slider_container.addEventListener("touchend", function(ev) {
+  console.log(ev.changedTouches[0].clientX);
+  move_end = ev.changedTouches[0].clientX;
+  if (move_end > move_start) {
+    console.log("swipe left");
+    starting_index--;
+
+    if (starting_index == -1) {
+      starting_index = elements;
+      slider_container.style.transform =
+        "translateX(-" + list_of_translate[starting_index] + "%)";
+      slider_container.style.transition = "transform 0s linear 0s";
+      starting_index--;
+
+      setTimeout(() => {
+        slider_container.style.transform =
+          "translateX(-" + list_of_translate[starting_index] + "%)";
+        slider_container.style.transition = "transform 0.5s linear 0s";
+      }, 50);
+    } else if (starting_index > -1) {
+      slider_container.style.transform =
+        "translateX(-" + list_of_translate[starting_index] + "%)";
+      slider_container.style.transition = "transform 0.5s linear 0s";
+      console.log(starting_index);
+    }
+  } else {
+    console.log("swipe right");
+    starting_index++;
+
+    if (starting_index == elements) {
+      slider_container.style.transform =
+        "translateX(-" + list_of_translate[starting_index] + "%)";
+      slider_container.style.transition = "transform 0.5s linear 0s";
+
+      setTimeout(() => {
+        starting_index = 0;
+        slider_container.style.transform =
+          "translateX(-" + list_of_translate[starting_index] + "%)";
+        slider_container.style.transition = "transform 0s linear 0s";
+        console.log(starting_index);
+      }, 500);
+    } else if (starting_index < elements + 1) {
+      slider_container.style.transform =
+        "translateX(-" + list_of_translate[starting_index] + "%)";
+      slider_container.style.transition = "transform 0.5s linear 0s";
+
+      console.log(starting_index);
+    }
+  }
+});

@@ -145,7 +145,7 @@ setInterval(function() {
       "translateX(-" + list_of_translate[starting_index] + "%)";
     slider_container.style.transition = "transform 0.5s linear 0s";
   }
-}, 5000);
+}, 10000);
 
 //12345   123
 //23456   234

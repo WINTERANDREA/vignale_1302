@@ -1,5 +1,5 @@
 //Define how many items to show
-if (window.matchMedia("(min-width: 900px)").matches) {
+if (window.matchMedia("(min-width: 1024px)").matches) {
   /* the viewport is at least 400 pixels wide */
   shown_items = 3;
 } else if (window.matchMedia("(min-width: 600px)").matches) {

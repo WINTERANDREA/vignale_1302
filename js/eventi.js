@@ -163,7 +163,7 @@ slider_container.addEventListener("touchstart", function(ev) {
 slider_container.addEventListener("touchend", function(ev) {
   console.log(ev.changedTouches[0].clientX);
   move_end = ev.changedTouches[0].clientX;
-  if (move_end > move_start) {
+  if (move_end > move_start && move_end - move_start > 100) {
     console.log("swipe left");
     starting_index--;
 
@@ -185,7 +185,7 @@ slider_container.addEventListener("touchend", function(ev) {
       slider_container.style.transition = "transform 0.5s linear 0s";
       console.log(starting_index);
     }
-  } else {
+  } else if (move_end < move_start && move_start - move_end > 100) {
     console.log("swipe right");
     starting_index++;
 

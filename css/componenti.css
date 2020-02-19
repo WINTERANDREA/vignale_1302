@@ -590,7 +590,6 @@
   color: #fff;
   cursor: pointer;
   padding: 13px 15px;
-  border-radius: 50%;
   outline: none;
 }
 
@@ -1061,8 +1060,11 @@ a.lightbox-close:after {
   color: var(--color-secondary-dark);
   cursor: pointer;
   padding: 13px 15px;
-  border-radius: 50%;
   outline: none;
+}
+
+.button-left {
+  margin-right: 2rem;
 }
 
 .button-left:hover,

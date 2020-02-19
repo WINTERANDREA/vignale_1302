@@ -995,11 +995,12 @@ a.lightbox-close:after {
 }
 
 .eventi-container ul li {
+  backface-visibility: hidden;
   text-align: center;
   list-style-type: none;
-  border: 2px solid var(--color-secondary-dark);
-  background-color: #fff;
-  padding: 1rem;
+  /* border: 2px solid var(--color-secondary-dark); */
+  padding-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
   /* box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.2); */
 }
 
@@ -1024,6 +1025,8 @@ a.lightbox-close:after {
   min-height: 300px;
   font-size: 1.6rem;
   line-height: 2rem;
+  text-align: justify;
+  padding: 1rem;
 }
 
 .eventi-testo p {
@@ -1032,6 +1035,13 @@ a.lightbox-close:after {
 
 .eventi-title {
   min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventi-title h4 {
+  font-weight: bold;
 }
 
 .eventi-icone {
@@ -1039,13 +1049,20 @@ a.lightbox-close:after {
   padding: 1rem;
 }
 
+.eventi-icone span,
+.eventi-icone i {
+  font-weight: bold;
+}
+
 .ora {
   padding-top: 0.5rem;
   margin-right: 1rem;
+  font-weight: bold;
 }
 
 .calendar {
   margin-right: 1rem;
+  font-weight: bold;
 }
 
 .button-container {
@@ -1055,12 +1072,12 @@ a.lightbox-close:after {
 
 .button-left,
 .button-right {
-  border: 2px solid var(--color-secondary-dark);
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.95);
   color: var(--color-secondary-dark);
   cursor: pointer;
   padding: 13px 15px;
   outline: none;
+  box-shadow: none;
 }
 
 .button-left {

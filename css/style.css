@@ -516,12 +516,15 @@ p.nav-titolo2 {
   width: 100%;
   overflow-x: hidden;
   padding: 10rem 0;
-  background-color: #fff;
+  background-image: url(/img/eventi/amazon/09_amazon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-#heading-eventi .heading-secondary {
+/* #heading-eventi .heading-secondary {
   color: var(--color-secondary-dark);
-}
+} */
 
 /* SERVIZI */
 #servizi-section {

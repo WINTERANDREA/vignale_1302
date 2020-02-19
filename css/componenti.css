@@ -590,10 +590,9 @@
   color: #fff;
   cursor: pointer;
   padding: 13px 15px;
-  border-radius: 50%;
   outline: none;
 }
-
+/* 
 @media (max-width: 600px) {
   .buttons button {
     padding: 7px 9px;
@@ -608,7 +607,7 @@
     top: -25vh;
     right: 15px;
   }
-}
+} */
 
 .buttons button:hover {
   background-color: #fff;

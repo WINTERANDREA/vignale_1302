@@ -47,7 +47,7 @@
 }
 
 .disappear {
-  animation: disapp 2s linear forwards;
+  animation: disapp 0.5s linear forwards;
 }
 .disappear2 {
   opacity: 0;
@@ -1025,7 +1025,7 @@ a.lightbox-close:after {
   min-height: 300px;
   font-size: 1.6rem;
   line-height: 2rem;
-  text-align: justify;
+  text-align: center;
   padding: 1rem;
 }
 

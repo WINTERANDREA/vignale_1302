@@ -507,6 +507,7 @@ p.nav-titolo2 {
   .planimetria-det {
     display: flex;
     justify-content: center;
+    padding-bottom: 5rem;
   }
 }
 

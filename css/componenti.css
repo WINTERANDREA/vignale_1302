@@ -592,22 +592,18 @@
   padding: 13px 15px;
   outline: none;
 }
-/* 
+
 @media (max-width: 600px) {
   .buttons button {
     padding: 7px 9px;
   }
   .buttons button#next {
-    position: absolute;
     top: -25vh;
-    right: 15px;
   }
   .buttons button#prev {
-    position: absolute;
     top: -25vh;
-    right: 15px;
   }
-} */
+}
 
 .buttons button:hover {
   background-color: #fff;

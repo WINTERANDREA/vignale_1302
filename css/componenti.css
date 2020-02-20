@@ -706,7 +706,7 @@
 
 .form__input {
   font-size: 1.5rem;
-  font-family: inherit;
+  font-family: var(--text-body);
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
@@ -736,9 +736,11 @@
 
 .form__input::-webkit-input-placeholder {
   color: var(--color-grey-dark-2);
+  font-family: var(--text-body);
 }
 
 .form__label {
+  font-family: var(--text-body);
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 0.2rem;
@@ -754,6 +756,7 @@
 }
 
 .form__text {
+  font-family: var(--text-body);
   font-size: 1.5rem;
   font-family: inherit;
   color: inherit;
@@ -769,6 +772,7 @@
 }
 
 .form__radio-group {
+  font-family: var(--text-body);
   width: 49%;
   display: inline-block;
 }
@@ -785,6 +789,7 @@
 }
 
 .form__radio-label {
+  font-family: var(--text-body);
   font-size: var(--default-size);
   cursor: pointer;
   position: relative;
@@ -878,6 +883,11 @@ a.lightbox img {
 
 a.lightbox img:hover {
   animation: pulsate 1s infinite;
+}
+
+a.lightbox img:active,
+a.lightbox img:focus {
+  animation: none;
 }
 
 /* Styles the lightbox, removes it from sight and adds the fade-in transition */
@@ -1078,6 +1088,7 @@ a.lightbox-close:after {
   padding: 13px 15px;
   outline: none;
   box-shadow: none;
+  border: none;
 }
 
 .button-left {
@@ -1088,6 +1099,6 @@ a.lightbox-close:after {
 .button-right:hover,
 .button-left:focus,
 .button-right:focus {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-dark);
   color: var(--color-grey-light-1);
 }

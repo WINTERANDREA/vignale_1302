@@ -447,7 +447,7 @@
 
 @media (max-width: 1023px) {
   .tab2 {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
@@ -680,10 +680,24 @@
   text-align: left;
   max-width: 255px;
 }
+
+@media (max-width: 1024px) {
+  .servizi-box_text {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .servizi-box_text {
+    max-width: 100%;
+    margin-left: 5rem;
+  }
+}
+
 .servizi-box_list {
   width: 85%;
-  margin: auto;
-  margin: auto 3rem;
+  margin: 0 auto;
 }
 .servizi-box_list > li {
   width: 100%;
@@ -696,7 +710,7 @@
 }
 
 .servizi-box_list > li span {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /* FORM */
@@ -731,7 +745,7 @@
 }
 
 .form__input:focus:invalid {
-  border-bottom: 3px solid var(--color-secondary-light);
+  border-bottom: 3px solid var(--color-secondary-dark);
 }
 
 .form__input::-webkit-input-placeholder {
@@ -748,6 +762,12 @@
   display: block;
   transition: all 0.3s;
 }
+/* 
+.form__input:focus .form__label {
+  border-bottom: 1px solid var(--color-secondary) !important;
+  box-shadow: 0 1px 0 0 var(--color-secondary) !important;
+  color: yellow;
+} */
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -885,9 +905,10 @@ a.lightbox img:hover {
   animation: pulsate 1s infinite;
 }
 
-a.lightbox img:active,
-a.lightbox img:focus {
-  animation: none;
+@media only screen and (max-width: 1023px) {
+  a.lightbox img:hover {
+    animation: none;
+  }
 }
 
 /* Styles the lightbox, removes it from sight and adds the fade-in transition */
@@ -1101,4 +1122,5 @@ a.lightbox-close:after {
 .button-right:focus {
   background-color: var(--color-secondary-dark);
   color: var(--color-grey-light-1);
+  -webkit-tap-highlight-color: transparent;
 }

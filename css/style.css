@@ -200,6 +200,10 @@ p {
   color: var(--color-secondary) !important;
 }
 
+.green2 {
+  color: var(--color-secondary);
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -556,7 +560,7 @@ p.nav-titolo2 {
 }
 
 .header-servizi p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 
@@ -662,7 +666,7 @@ p.nav-titolo2 {
 .page-footer {
   font-family: var(--text-body);
   background: var(--color-secondary-dark);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 

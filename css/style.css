@@ -50,6 +50,7 @@ html {
 } /* 1rem = 10px */
 
 body {
+  overflow-x: hidden;
   font-family: var(--text-body);
   font-weight: 400;
   line-height: 1.7;

@@ -209,7 +209,7 @@ p {
 .languages {
   color: var(--color-secondary-dark);
   top: 0;
-  padding-left: 15px;
+  padding-left: 5px;
   float: right;
 }
 

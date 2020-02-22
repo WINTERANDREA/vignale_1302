@@ -50,7 +50,6 @@ html {
 } /* 1rem = 10px */
 
 body {
-  overflow-x: hidden;
   font-family: var(--text-body);
   font-weight: 400;
   line-height: 1.7;
@@ -207,6 +206,38 @@ p {
 
 /* NAVBAR */
 
+.languages {
+  color: var(--color-secondary-dark);
+  top: 0;
+  padding-left: 15px;
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  .languages {
+    color: var(--color-secondary-dark);
+    top: 0;
+  }
+}
+
+.language {
+  color: var(--color-secondary-dark);
+  cursor: pointer;
+}
+
+.language:hover {
+  font-weight: bold;
+}
+
+.language-en {
+  margin-right: 6px;
+}
+
+.highlight {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -335,6 +366,7 @@ p.nav-titolo2 {
   letter-spacing: 1.5rem;
   animation: moveInRight 1s ease-out;
   padding-top: 3rem;
+  line-height: 3rem;
 }
 
 @media (max-width: 600px) {
@@ -451,6 +483,12 @@ p.nav-titolo2 {
   }
 }
 
+@media (max-width: 600px) {
+  #heading-ambienti h2.heading-secondary {
+    padding-top: 7rem;
+  }
+}
+
 .description {
   display: grid;
   height: 100%;
@@ -515,7 +553,7 @@ p.nav-titolo2 {
   .planimetria-det {
     display: flex;
     justify-content: center;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
   }
 }
 
@@ -524,7 +562,7 @@ p.nav-titolo2 {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  padding: 10rem 0;
+  padding: 7rem 0;
   background-image: url(/img/eventi/amazon/09_amazon.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -708,6 +746,16 @@ p.nav-titolo2 {
 .google-map {
   max-width: 400px;
   height: 200px;
+}
+
+.sub-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-footer a {
+  padding-left: 20px;
 }
 
 @media (max-width: 992px) {

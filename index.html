@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Residenza Vignale | Home</title>
+    <meta name="description" content="Residenza Vignale"/>
 
+    <title>Residenza Vignale | Home</title>
+    <link rel='icon' href='favicon.ico'>
+    
+       
     <!-- CSS  -->
+
+   
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -43,8 +50,13 @@
   </head>
   <body class="ggg">
     <!-- NAVBAR -->
-    <nav class="navbar" role="navigation" style="box-shadow: none">
+    <nav class="navbar" role="navigation">
       <div class="nav-wrapper container">
+        <span class="languages">
+          <a class="language language-it" href="index.html">IT</a>
+          &nbsp;
+          <a class="language language-en" href="en/index.html">EN</a>
+        </span>
         <a id="logo-container" href="#" class="brand-logo"
           ><img
             class="logo"
@@ -71,6 +83,7 @@
           <li><a href="#showcase">HOME</a></li>
         </ul>
 
+        
         <ul id="nav-mobile" class="sidenav">
           <li><a id="logo-container" href="#" class="brand-logo"
           ><img
@@ -265,6 +278,9 @@
                   <img class="slide current" src="/img/ambienti/sala_oro/01_sala_oro.jpg" alt="" />
                   <img class="slide" src="/img/ambienti/sala_oro/02_sala_oro.jpg" alt="" />
                   <img class="slide" src="/img/ambienti/sala_oro/03_sala_oro.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_oro/04_sala_oro.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_oro/05_sala_oro.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_oro/06_sala_oro.jpg" alt="" />
                 </div>
                 <div class="buttons">
                   <button id="prev">
@@ -304,6 +320,7 @@
                   <img class="slide" src="/img/ambienti/sala_rossa/01_sala_rossa.jpg" alt="" />
                   <img class="slide" src="/img/ambienti/sala_rossa/02_sala_rossa.jpg" alt="" />
                   <img class="slide" src="/img/ambienti/sala_rossa/03_sala_rossa.jpg" alt="" />
+                  <img class="slide" src="/img/ambienti/sala_rossa/04_sala_rossa.jpg" alt="" />
                 </div>
                 <div class="buttons">
                   <button id="prev">
@@ -461,6 +478,8 @@
                     alt=""
                   />
                   <img class="slide " src="/img/ambienti/atrio/04_atrio.jpg" alt="" />
+                  <img class="slide " src="/img/ambienti/atrio/05_atrio.jpg" alt="" />
+                  <img class="slide " src="/img/ambienti/atrio/06_atrio.jpg" alt="" />
                 </div>
                 <div class="buttons">
                   <button id="prev">
@@ -590,7 +609,7 @@
         <div class="eventi-container">
           <ul class="eventi-container-slider">
             <li>
-              <div> <img src="img/eventi/mdw.jpg" alt="" /></div>
+              <div> <img style="object-fit: contain;" src="img/eventi/mdw.jpg" alt="" /></div>
               <div class="eventi-testo">
                 <div class="eventi-title"><h4>Milano Design Week </h4></div>
               
@@ -611,6 +630,23 @@
               <i class="far fa-clock ora"></i><span>9.00 - 18.30</span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cumque accusamus. Vel autem, quis perspiciatis, totam recusandae sunt placeat expedita asperiores reiciendis..</p>
             </div>
+              </div>
+            </li>
+
+            <li>
+              <div><img src="img/eventi/countrychic.jpg" alt="" /></div>
+              <div class="eventi-testo">
+                <div class="eventi-title"><h4>Country Chic</h4></div>
+                
+                <div  class="eventi-icone">
+                  <i class="far fa-calendar-alt calendar"></i><span >24 Maggio 2020 </span> <br>
+                <i class="far fa-clock ora"></i><span>9.00 - 18.30</span>
+                <p>Mostra mercato di artigianato e handmade in Ville e Castelli.
+                  Un appuntamento in cui stile e sapori si fondono in un insieme armonico e d’atmosfera.</p>
+                  <a href="https://www.facebook.com/CountryChicMostraMercato/" target="_blank" class="btn-text u-margin-top-small"
+              >Scopri di più &rarr;</a>
+              </div>
+              
               </div>
             </li>
 
@@ -639,20 +675,25 @@
      
 
      
-    
+      <form action="https://formspree.io/mbjylqrr" method="POST">
+        <input type="text" name="name">
+        <input type="email" name="_replyto">
+        <input type="submit" value="Send">
+      </form>
 
     <!-- FORM -->
     <section id="section-book" class="section-book">
       <div class="row">
         <div class="book">
           <div class="book__form">
-            <form action="#" class="form">
+            <form action="https://formspree.io/mbjylqrr" method="POST" class="form">
               <div class=" u-margin-bottom-medium">
                 <h2 class="heading-secondary green">
                   Richiedi informazioni
               </div>
               <div class="form__group">
                 <input
+                name="Nome"
                   type="text"
                   class="form__input"
                   placeholder="Nome"
@@ -663,6 +704,7 @@
               </div>
               <div class="form__group">
                 <input
+                name="Email"
                   type="email"
                   class="form__input"
                   placeholder="Indirizzo Email"
@@ -672,18 +714,18 @@
                 <label for="email" class="form__label">Indirizzo Email</label>
               </div>
               <div class="form__group">
-                <textarea class="form__text" name="message" id="message" placeholder="Inserisci il tuo messaggio"></textarea>
+                <textarea class="form__text" name="Messaggio" id="message" placeholder="Inserisci il tuo messaggio"></textarea>
               
               </div>
               
               <div class="form__group u-margin-bottom-medium">
                 <div class="form__radio-group">
-                  <input type="radio" class="form__radio-input" id="small" name="form-group">
+                  <input type="radio" name="Privato"  class="form__radio-input" id="small" name="form-group">
                   <label for="small" class="form__radio-label">
                     <span class="form__radio-button"></span> Privato</label>
                 </div>
                 <div class="form__radio-group">
-                  <input type="radio" class="form__radio-input" id="large" name="form-group">
+                  <input type="radio" name="Azienda" class="form__radio-input" id="large" name="form-group">
                   <label for="large" class="form__radio-label">
                     <span class="form__radio-button"></span> 
                     Azienda</label>
@@ -691,7 +733,7 @@
               </div>
 
               <div class="form__group">
-                <button class="btn btn--green">Invia &rarr;</button>
+                <button type="submit" value="Send" class="btn btn--green">Invia &rarr;</button>
               </div>
             </form>
           </div>
@@ -706,7 +748,7 @@
           <div class="col l4 s12">
             <h5 class="green2 u-margin-bottom-small">Contatti</h5>
             <p class="grey-text text-lighten-4">
-              Per informazioni, preventivi, prenotazioni e visite della Residenza Vignale riolgersi a <strong>Ambercroft S.r.l</strong>, Via E. Toti 2, 20123 Milano
+              Per informazioni, preventivi, prenotazioni e visite della Residenza Vignale rivolgersi a <strong>Ambercroft S.r.l</strong>, Via E. Toti 2, 20123 Milano
               
                 <ul>
                   <li>&nbsp;</li>
@@ -753,15 +795,18 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container center">
-          Copyright © 2020 Ambercroft S.r.l. - <span style="color: var(--color-secondary);font-style:bold; font-size: 1.2rem;">Designed by &there4;</span>
-          
-          <a
-            class="brown-text text-lighten-3"
-            href="http://materializecss.com"
-          ></a>
+        <div class="container sub-footer">
+          <p>Copyright © 2020 Ambercroft S.r.l. </p> 
+          <a href="https://eur-lex.europa.eu/legal-content/IT/ALL/?uri=CELEX:32002L0058" target="_blank">EU e-privacy directive</a> 
+  
         </div>
+        <!-- <span style="color: var(--color-secondary);font-style:bold; font-size: 1.2rem;">Designed by &there4;</span> -->
       </div>
+      <span class="languages">
+        <a class="language language-it" href="index.html">IT</a>
+        &nbsp;
+        <a class="language language-en" href="en/index.html">EN</a>
+      </span>
     </footer>
 
     <!-- POPUP HISTORY -->
@@ -918,6 +963,20 @@
           $('.materialboxed').materialbox()
           $('.carousel.carousel-slider').carousel({ fullWidth: true });
       });
+  </script>
+  <script src="js/lang.js"></script>
+  <script>
+    if ("userLanguage" in sessionStorage) {
+      // pass
+    } else {
+      if (userLang == "it") {
+        //pass
+      } else {
+        window.location.href(
+          "127.0.0.1:5500/en/index.html"
+        );
+      }
+    }
   </script>
   
 

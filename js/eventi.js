@@ -76,7 +76,7 @@ button_right.addEventListener("click", function() {
   if (starting_index == elements) {
     slider_container.style.transform =
       "translateX(-" + list_of_translate[starting_index] + "%)";
-    slider_container.style.transition = "transform 0.5s linear 0s";
+    slider_container.style.transition = "transform 0.2s linear 0s";
 
     setTimeout(() => {
       starting_index = 0;
@@ -84,11 +84,11 @@ button_right.addEventListener("click", function() {
         "translateX(-" + list_of_translate[starting_index] + "%)";
       slider_container.style.transition = "transform 0s linear 0s";
       console.log(starting_index);
-    }, 500);
+    }, 200);
   } else if (starting_index < elements + 1) {
     slider_container.style.transform =
       "translateX(-" + list_of_translate[starting_index] + "%)";
-    slider_container.style.transition = "transform 0.5s linear 0s";
+    slider_container.style.transition = "transform 0.2s linear 0s";
 
     console.log(starting_index);
   }
@@ -113,12 +113,12 @@ button_left.addEventListener("click", function() {
     setTimeout(() => {
       slider_container.style.transform =
         "translateX(-" + list_of_translate[starting_index] + "%)";
-      slider_container.style.transition = "transform 0.5s linear 0s";
+      slider_container.style.transition = "transform 0.2s linear 0s";
     }, 50);
   } else if (starting_index > -1) {
     slider_container.style.transform =
       "translateX(-" + list_of_translate[starting_index] + "%)";
-    slider_container.style.transition = "transform 0.5s linear 0s";
+    slider_container.style.transition = "transform 0.2s linear 0s";
     console.log(starting_index);
   }
 });
@@ -131,7 +131,7 @@ setInterval(function() {
   if (starting_index == elements) {
     slider_container.style.transform =
       "translateX(-" + list_of_translate[starting_index] + "%)";
-    slider_container.style.transition = "transform 0.5s linear 0s";
+    slider_container.style.transition = "transform 0.2s linear 0s";
 
     setTimeout(() => {
       starting_index = 0;
@@ -139,11 +139,11 @@ setInterval(function() {
         "translateX(-" + list_of_translate[starting_index] + "%)";
       slider_container.style.transition = "transform 0s linear 0s";
       console.log(starting_index);
-    }, 500);
+    }, 200);
   } else if (starting_index < elements + 1) {
     slider_container.style.transform =
       "translateX(-" + list_of_translate[starting_index] + "%)";
-    slider_container.style.transition = "transform 0.5s linear 0s";
+    slider_container.style.transition = "transform 0.2s linear 0s";
   }
 }, 10000);
 
@@ -163,7 +163,7 @@ slider_container.addEventListener("touchstart", function(ev) {
 slider_container.addEventListener("touchend", function(ev) {
   console.log(ev.changedTouches[0].clientX);
   move_end = ev.changedTouches[0].clientX;
-  if (move_end > move_start && move_end - move_start > 70) {
+  if (move_end > move_start && move_end - move_start > 40) {
     console.log("swipe left");
     starting_index--;
 
@@ -185,7 +185,7 @@ slider_container.addEventListener("touchend", function(ev) {
       slider_container.style.transition = "transform 0.5s linear 0s";
       console.log(starting_index);
     }
-  } else if (move_end < move_start && move_start - move_end > 70) {
+  } else if (move_end < move_start && move_start - move_end > 40) {
     console.log("swipe right");
     starting_index++;
 
